@@ -1,8 +1,10 @@
-#Funkcja zwracająca sunę liczb parzystych
+#Funkcja zwracajaca sume liczb parzystych
 
 
 
-
-def sum_even():
-    A=[x,y,z]
-    return x+y+z
+def sum_even(a):
+    even = []
+    for x in a:
+        if x %2 == 0:
+            even.append(x)
+    return sum(even)
